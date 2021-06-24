@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <title>Just a generic page</title>
     <script>
-      setTimeout(wakeUpUser, 5000);
-      function wakeUpUser() {
-        alert("You are going to stare at this boring page forever");
+      var scoops = 5;
+      while (scoops > 0) {
+        document.write("Another scoop please!<br>");
+        scoops -= 1;
       }
+      document.write("Fat people amiright?");
     </script>
   </head>
 </html>
